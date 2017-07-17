@@ -25,8 +25,8 @@ SVIFT.vis.example.googlegif = (function (data, container) {
   };
 
   module.resize = function () {
-    var width = module.container.node().offsetWidth,
-      height = module.container.node().offsetHeight;
+    var width = module.container.node().offsetWidth-module.config.margin.right-module.config.margin.left,
+      height = module.container.node().offsetHeight-module.config.margin.top-module.config.margin.bottom;
 
     module.width = width;
 
