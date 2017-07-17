@@ -35,13 +35,13 @@ SVIFT.vis.example.googlegif = (function (data, container) {
 
     var interLeft = [{value:0}], interRight = [{value:0}];
 
-    module.steps.forEach(function(step){
-      interLeft.push({value:width/100*step.value, duration:step.duration, ease:d3.easeCubicInOut});
-      interRight.push({value:width/100*(100-step.value), duration:step.duration, ease:d3.easeCubicInOut});
+    module.steps.forEach(function(step, si){
+      interLeft.push({value:width/100*step.value, duration:step.duration, ease:(si===0)?d3.easeCubicInOut:false});
+      interRight.push({value:width/100*(100-step.value), duration:step.duration, ease:(si===0)?d3.easeCubicInOut:false});
     })
     
-    interLeft.push({value:width/100*module.goal, duration:Math.random(), ease:d3.easeCubicInOut});
-    interRight.push({value:width/100*(100-module.goal), duration:Math.random(), ease:d3.easeCubicInOut});
+    interLeft.push({value:width/100*module.goal, duration:Math.random()});
+    interRight.push({value:width/100*(100-module.goal), duration:Math.random()});
 
     module.timeline.leftRect.obj.interpolate = SVIFT.helper.interpolate(interLeft);
     module.timeline.rightRect.obj.interpolate = SVIFT.helper.interpolate(interRight);
