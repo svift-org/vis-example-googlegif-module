@@ -58,7 +58,7 @@ SVIFT.vis.example.googlegif = (function (data, container) {
   module.drawRightRect = function(t){
     module.g.select('#right')
       .attr('width', module.timeline.rightRect.obj.interpolate(t))
-      .attr('x', width - module.timeline.rightRect.obj.interpolate(t));
+      .attr('x', module.width - module.timeline.rightRect.obj.interpolate(t));
   };
 
   module.timeline = {
