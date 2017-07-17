@@ -12,7 +12,6 @@ SVIFT.vis.example.googlegif = (function (data, container) {
     for(var i = 0; i<5; i++){
       module.steps.push( {value: module.goal - ((Math.random()>0.5)?-(100-module.goal):module.goal) * Math.random()/2, duration:Math.random()} );
     }
-    console.log(module.goal, module.steps);
 
     module.g.selectAll('rect').data([0,1]).enter().append('rect')
       .attr('id',function(d){ return (d===0)?'left':'right'; })
