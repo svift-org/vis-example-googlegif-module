@@ -40,8 +40,9 @@ SVIFT.vis.example.googlegif = (function (data, container) {
       interRight.push({value:width/100*(100-step.value), duration:step.duration, ease:(si===0)?d3.easeCubicInOut:false});
     })
     
-    interLeft.push({value:width/100*module.goal, duration:Math.random()});
-    interRight.push({value:width/100*(100-module.goal), duration:Math.random()});
+    var lastDuration = Math.random();
+    interLeft.push({value:width/100*module.goal, duration:lastDuration});
+    interRight.push({value:width/100*(100-module.goal), duration:lastDuration});
 
     module.timeline.leftRect.obj.interpolate = SVIFT.helper.interpolate(interLeft);
     module.timeline.rightRect.obj.interpolate = SVIFT.helper.interpolate(interRight);
