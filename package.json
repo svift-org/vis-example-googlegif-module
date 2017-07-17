@@ -1,0 +1,16 @@
+{
+  "name": "svift-vis-example-googlegif",
+  "version": "1.0.0",
+  "description": "Example for the animation system to build to google 2-number vis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/svift/vis-example-googlegif-module.git"
+  },
+  "author": "Sebastian Meier",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/svift/vis-example-googlegif-module#readme"
+}
