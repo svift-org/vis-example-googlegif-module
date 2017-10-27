@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/svift/vis-example-googlegif-module.git"
+    "url": "git+https://git@github.com/svift-org/vis-example-googlegif-module.git"
   },
   "author": "Sebastian Meier",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/svift/vis-example-googlegif-module#readme"
+  "homepage": "https://github.com/svift-org/vis-example-googlegif-module#readme"
 }
